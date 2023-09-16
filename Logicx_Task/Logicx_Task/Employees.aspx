@@ -126,6 +126,7 @@
         </asp:View>
 
         <asp:View ID="View2" runat="server">
+
             <h3>Do You Want Delete <asp:Label ID="LblName" runat="server" BackColor="White" Font-Bold="True" ForeColor="Red"></asp:Label> ?</h3>
             <p>
                 <asp:Button ID="BtnDelete" runat="server" Text="Delete" class="btn btn-success" OnClick="BtnDelete_Click" BackColor="Red" Font-Size="Medium" BorderColor="Black" BorderStyle="Double"/>

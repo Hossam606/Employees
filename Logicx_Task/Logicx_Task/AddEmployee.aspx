@@ -36,24 +36,12 @@
         }
         .auto-style14 {
             height: 26px;
-            width: 167px;
+            width: 178px;
             table-layout: auto;
         }
         .auto-style15 {
-            width: 167px;
+            width: 178px;
             table-layout: auto;
-        }
-        .auto-style16 {
-            height: 26px;
-            width: 167px;
-        }
-        .auto-style17 {
-            width: 167px;
-            height: 33px;
-            table-layout: auto;
-        }
-        .auto-style18 {
-            width: 167px;
         }
         .auto-style19 {
             width: 501px;
@@ -65,11 +53,23 @@
             height: 82px;
         }
         .auto-style21 {
-            width: 167px;
+            width: 178px;
             height: 82px;
         }
         .auto-style22 {
             height: 82px;
+        }
+        .auto-style23 {
+            height: 26px;
+            width: 178px;
+        }
+        .auto-style24 {
+            width: 178px;
+            height: 33px;
+            table-layout: auto;
+        }
+        .auto-style25 {
+            width: 178px;
         }
     </style>
 </asp:Content>
@@ -83,15 +83,24 @@
 
         </div>
 
-        <div style="font-size:x-large" align="center"> Employee Manage Form</div>
+        <div style="font-size:x-large" align="center"> Employee Manage Form </div>
         <br />
 
 
         <table class="auto-style1">
             <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style6" style="table-layout: auto; font-family: Calibri; font-size: large;">
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" Font-Italic="True" ForeColor="Red" Height="105px" Width="211px" />
+                </td>
+                <td class="auto-style23">
+                    &nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+            </tr>
+            <tr>
                 <td class="auto-style3"></td>
                 <td class="auto-style6" style="table-layout: auto; font-family: Calibri; font-size: large;">Add Employee</td>
-                <td class="auto-style16">
+                <td class="auto-style23">
                     <br />
                     <br />
                 </td>
@@ -104,7 +113,8 @@
                     <asp:TextBox ID="TextName" runat="server" Font-Size="Medium" Width="169px"></asp:TextBox>
                 </td>
                 <td class="auto-style2">
-                    &nbsp;</td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextName" ErrorMessage="Name is Required" Font-Italic="True" ForeColor="#FF3300">Required</asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -113,7 +123,8 @@
                     <asp:TextBox ID="TextEmail" runat="server" Font-Size="Medium" Width="169px"></asp:TextBox>
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextEmail" ErrorMessage="Email is Required" Font-Italic="True" ForeColor="#FF3300">Required</asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -122,16 +133,18 @@
                     <asp:TextBox ID="TextDate" runat="server" Font-Size="Medium" Width="169px"></asp:TextBox>
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextDate" ErrorMessage="Date is Required" Font-Italic="True" ForeColor="Red">Required</asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style8"></td>
                 <td class="auto-style9" style="border: 5px double #C0C0C0; padding: 5px; margin: 20px; table-layout: auto; border-collapse: collapse; border-spacing: 8px; empty-cells: inherit; caption-side: top; text-align: left; font-family: Andalus; font-size: medium; color: #808080;">Salary</td>
-                <td class="auto-style17" style="border: 5px double #C0C0C0; padding: 5px; margin: 20px; border-collapse: collapse; border-spacing: 8px; empty-cells: inherit; caption-side: top; text-align: left; font-family: Andalus; font-size: medium; color: #808080;">
+                <td class="auto-style24" style="border: 5px double #C0C0C0; padding: 5px; margin: 20px; border-collapse: collapse; border-spacing: 8px; empty-cells: inherit; caption-side: top; text-align: left; font-family: Andalus; font-size: medium; color: #808080;">
                     <asp:TextBox ID="TextSalary" runat="server" Font-Size="Medium" Width="169px"></asp:TextBox>
                 </td>
                 <td class="auto-style10">
-                    &nbsp;</td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextSalary" ErrorMessage="Salary is Required" Font-Italic="True" ForeColor="Red">Required</asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -149,8 +162,7 @@
                     </td>
                 <td class="auto-style21">
                     &nbsp;
-                    <asp:Button ID="Button1" runat="server" BackColor="#0000CC" Font-Size="Medium" ForeColor="Black" OnClick="Button1_Click" Text="Back" Width="191px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <br />
                 </td>
                 <td class="auto-style22">
@@ -159,7 +171,7 @@
             <tr>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style18">
+                <td class="auto-style25">
 
 
        

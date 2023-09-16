@@ -17,7 +17,7 @@ namespace Logicx_Task
             {
                 TextId.Text = Request.QueryString["id"];
  
-              //  LblNameEdit.Text =TextId.Text;
+                LblNameEdit.Text =TextId.Text;
 
                 var myEmployee = db.Employees.FirstOrDefault(c => c.Id.ToString() == TextId.Text);
 
@@ -50,5 +50,7 @@ namespace Logicx_Task
         {
             Response.Redirect("Employees.aspx");
         }
+
+         
     }
 } 	

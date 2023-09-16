@@ -62,23 +62,9 @@ namespace Logicx_Task
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AddEmployee.aspx");
+            Response.Redirect("Home.aspx");
         }
     }
 }
-//if (Page.IsValid)
-//{
-//    var emp = new Employee
-//    {
-//        Name = TextName.Text,
-//        Email = TextEmail.Text,
-//        Birth_Date = DateTime.Parse(TextDate.Text),
-//        Salary = decimal.Parse(TextSalary.Text),
-//        Status = CheckBox1.Checked,
-//    };
-//    db.Employees.Add(emp);
-//    db.SaveChanges();
-
-//    Response.Redirect("Home.aspx");
-//}
+ 
 
